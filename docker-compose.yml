@@ -43,9 +43,9 @@ services:
     container_name: symfony_db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: legal
-      MYSQL_USER: legal
-      MYSQL_PASSWORD: legal
+      MYSQL_DATABASE: symfony
+      MYSQL_USER: symfony
+      MYSQL_PASSWORD: symfony
     volumes:
       - db_data:/var/lib/mysql
     ports:
