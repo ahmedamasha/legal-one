@@ -88,10 +88,10 @@ Returns a count of log entries matching the specified filters.
 
 #### Filters
 
-- `serviceNames`: (Optional) Comma-separated list of service names.
-- `statusCode`: (Optional) HTTP status code.
-- `startDate`: (Optional) Start date (ISO 8601 format).
-- `endDate`: (Optional) End date (ISO 8601 format).
+- `serviceNames`: (Optional) Comma-separated list of service names. - indexed in db 
+- `statusCode`: (Optional) HTTP status code. - indexed in db 
+- `startDate`: (Optional) Start date (ISO 8601 format). - indexed in db 
+- `endDate`: (Optional) End date (ISO 8601 format). - indexed in db 
 
 #### Example
 
