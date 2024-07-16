@@ -1,0 +1,7 @@
+# # config/packages/monolog.yaml
+# monolog:
+#     handlers:
+#         main:
+#             type: stream
+#             path: '/var/www/logs/symfony.log'
+#             level: debug
