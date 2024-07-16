@@ -35,24 +35,27 @@ The project consists of the following components:
     cd log-aggregation-dashboard
     ```
 
-2. Copy the example environment file and customize it:
 
-    ```bash
-    cp .env.example .env
-    ```
-
-3. Build and start the Docker containers:
+2. Build and start the Docker containers:
 
     ```bash
     make up
     ```
 
-4. Run database migrations:
+
+3. Run Consumer:
 
     ```bash
-    make migrate
+    make consume
+    ```
+5. Run Producer:
+
+    ```bash
+    make producer
     ```
 
+
+ 
 ## Usage
 
 ### Access the Symfony Application

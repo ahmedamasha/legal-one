@@ -37,5 +37,5 @@ producer:
 	$(SYMFONY) app:log-producer
 
 # Run Consumer
-consumer:
+consume:
 	$(SYMFONY) app:log-consumer
