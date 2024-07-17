@@ -99,6 +99,8 @@ Returns a count of log entries matching the specified filters.
 curl --location 'http://localhost:8080/count?serviceNames=USER-SERVICE&statusCode=200'
 
 
-# Chart of Flow Diagram
+ 
 
-![Chart of Flow Diagram](./legal-logs-flow.jpg)
+## Chart of Flow Diagram
+
+![Chart of Flow Diagram](legal-logs-flow.jpg)
