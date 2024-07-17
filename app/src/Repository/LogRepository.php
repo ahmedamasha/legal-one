@@ -29,6 +29,9 @@ class LogRepository extends ServiceEntityRepository
                 } elseif ($field === 'endDate') {
                     $qb->andWhere('l.createdAt <= :endDate')
                         ->setParameter('endDate', $value);
+                } elseif ($field === 'serviceNames') {
+                    $qb->andWhere('l.serviceName IN (:serviceNames)')
+                        ->setParameter('serviceNames', $value);
                 } else {
                     $qb->andWhere("l.$field = :$field")
                         ->setParameter($field, $value);

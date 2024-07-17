@@ -23,24 +23,22 @@ class CountController extends AbstractController
     public function index(Request $request): JsonResponse
     {
         try {
-        // Extract filters from the request query parameters
-        $filters = [
-            'serviceNames' => $request->query->get('serviceNames'),
-            'statusCode' => $request->query->get('statusCode'),
-            'startDate' => $request->query->get('startDate'),
-            'endDate' => $request->query->get('endDate'),
-        ];
-        
+            // Extract filters from the request query parameters
+            $filters = [
+                'serviceNames' => $request->query->get('serviceNames'),
+                'statusCode' => $request->query->get('statusCode'),
+                'startDate' => $request->query->get('startDate'),
+                'endDate' => $request->query->get('endDate'),
+            ];
 
-        // Call the service to get the count
-        $count = $this->logCountService->countLogs($filters);
+            // Call the service to get the count
+            $count = $this->logCountService->countLogs($filters);
 
-        // Return JSON response with the count
-        return new JsonResponse(['count' => $count]);
+            // Return JSON response with the count
+            return new JsonResponse(['count' => $count]);
 
-    } catch (\Exception $e) {
-       
-        return new JsonResponse('Error retrieving count'.$e->getMessage());
-    }
+        } catch (\Exception $e) {
+            return new JsonResponse('Error retrieving count' . $e->getMessage(), 500);
+        }
     }
 }

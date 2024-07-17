@@ -19,7 +19,7 @@ class LogCountService
         $criteria = [];
 
         if (isset($filters['serviceNames'])) {
-            $criteria['serviceName'] = $filters['serviceNames'];
+            $criteria['serviceNames'] = explode(',', $filters['serviceNames']);
         }
         if (isset($filters['statusCode'])) {
             $criteria['statusCode'] = $filters['statusCode'];
