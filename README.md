@@ -2,6 +2,15 @@
 
 This project provides a solution to read an aggregated log file containing logs from various services and save it into a database. The goal is to enable the display of a dashboard with log information while continuously updating the database as new logs are written. The project includes a service with an endpoint `/count` that returns the count of log entries matching specified filters.
 
+
+![Alt text](legal-logs-flow.jpg)
+![Alt text](./legal-logs-flow.jpg)
+
+## Chart of Flow Diagram
+
+![Chart of Flow Diagram](legal-logs-flow.jpg)
+
+
 ## Table of Contents
 
 - [Architecture](#architecture)
@@ -97,15 +106,3 @@ Returns a count of log entries matching the specified filters.
 
 ```sh
 curl --location 'http://localhost:8080/count?serviceNames=USER-SERVICE&statusCode=200'
-
-
- 
-![Alt text](legal-logs-flow.jpg)
-![Alt text](./legal-logs-flow.jpg)
-
-## Chart of Flow Diagram
-
-![Chart of Flow Diagram](legal-logs-flow.jpg)
-
-
-
