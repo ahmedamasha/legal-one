@@ -3,9 +3,6 @@
 This project provides a solution to read an aggregated log file containing logs from various services and save it into a database. The goal is to enable the display of a dashboard with log information while continuously updating the database as new logs are written. The project includes a service with an endpoint `/count` that returns the count of log entries matching specified filters.
 
 
-![Alt text](legal-logs-flow.jpg)
-![Alt text](./legal-logs-flow.jpg)
-
 ## Chart of Flow Diagram
 
 ![Chart of Flow Diagram](legal-logs-flow.jpg)
