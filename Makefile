@@ -26,7 +26,7 @@ bash:
 
 # Run Symfony tests
 test:
-	$(EXEC_PHP) bash -c 'cd /var/www/html && ./vendor/bin/phpunit'
+	$(EXEC_PHP) bash -c 'php bin/console --env=test doctrine:database:create && cd /var/www/html && ./vendor/bin/phpunit'
 
 # Run Symfony migrations
 migrate:
