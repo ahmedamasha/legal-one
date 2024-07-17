@@ -102,5 +102,5 @@ curl --location 'http://localhost:8080/count?serviceNames=USER-SERVICE&statusCod
  
 
 ## Chart of Flow Diagram
+![alt text](legal-logs-flow.jpg)
 
-![Chart of Flow Diagram](legal-logs-flow.jpg)
