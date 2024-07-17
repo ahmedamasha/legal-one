@@ -103,6 +103,7 @@ curl --location 'http://localhost:8080/count?serviceNames=USER-SERVICE&statusCod
 
 ## Chart of Flow Diagram
 
-![ezcv logo](legal-logs-flow.jpg)
+![Alt text](./legal-logs-flow.jpg)
+
 
 
